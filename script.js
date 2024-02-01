@@ -2,8 +2,8 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-var localSettings = {};
-dayjs.locale(localSettings);
+var localeSettings = {};
+dayjs.locale(localeSettings);
 
 
 $(function () {
@@ -52,7 +52,7 @@ $(".time-block").each(function(){
 function currentTime() {
   var dateEl = $("#date");
   var timeEl = $("#time");
-  var currentDay = dayjs().format("dddd, MMM DD, YYYY");
+  var currentDay = dayjs().format(" dddd MMMM DD, YYYY");
   var currentTime = dayjs().format("hh:mm:ss A ");
   dateEl.text(currentDay);
   timeEl.text(currentTime);
