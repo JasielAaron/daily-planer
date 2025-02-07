@@ -7,6 +7,9 @@ $(function () {
   // Get Current hour in 24-hour format
   var currentHour = dayjs().hour();
 
+  //first, clear any existing time-blocks
+  $('.container-lg').empty();
+
 
   //Loops to create time blocks for the business hours (9am to 5pm)
 
